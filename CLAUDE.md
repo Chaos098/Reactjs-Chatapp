@@ -46,7 +46,14 @@ Group call, push notification thật (service worker), reaction, ghim tin nhắn
 
 ### Quyết định thiết kế DB (đã chốt)
 - Khóa chính: **UUID v7 cho tất cả bảng** (duy nhất + sắp xếp được theo thời gian, dùng làm cursor phân trang).
-- ERD dự kiến (~13 bảng): users, password_reset_tokens, friendships, blocks, conversations (direct/group dùng chung), conversation_members, messages, attachments, message_receipts, message_hidden, calls, reports, notifications. Dashboard aggregate trực tiếp từ created_at/started_at, chưa cần bảng activity_logs.
+- **ERD chốt (v2, 8 bảng)**: users, friendships, blocks, conversations (direct/group dùng chung), conversation_members, messages, calls, reports. File: `ChatApp-ERD-v2.drawio` (cùng thư mục; `ChatApp-ERD.drawio` là bản 13 bảng cũ, đã bỏ). Dashboard aggregate trực tiếp từ created_at/started_at, chưa cần bảng activity_logs.
+- Các bảng đã gộp/bỏ so với bản 13 bảng:
+  - `password_reset_tokens` → cột `reset_token_hash`, `reset_token_expires_at` trong `users` (1 token hiệu lực/user).
+  - `attachments` → cột `file_url`, `file_name`, `mime_type`, `file_size` (nullable) trong `messages` (1 tin = 1 file; nhiều file = nhiều tin).
+  - `message_hidden` → cột `hidden_by uuid[]` trong `messages` (xóa phía mình; ứng viên cắt nếu trễ).
+  - `message_receipts` → bỏ; `seen` suy ra từ `conversation_members.last_read_message_id`, `delivered` từ `last_delivered_message_id` (so sánh UUID v7).
+  - `notifications` → bỏ; số tin chưa đọc suy ra từ `last_read_message_id`, lời mời kết bạn từ `friendships.status = pending`, toast gửi qua Socket.io.
+- Giữ `conversation_members` (bảng nối N–N, chứa vai trò + mốc đã nhận/đã đọc riêng từng người) và `blocks` (A chặn B và B chặn A là hai sự kiện độc lập); không nhúng vào jsonb.
 - **User chỉ soft delete**, không bao giờ xóa cứng. Luật xử phạt theo số report nhận:
   - 1-3 report: **ban** (inactive, dữ liệu vẫn hiển thị, admin có thể unban).
   - Vượt 3 report: **delete** (soft) – tin nhắn vẫn lưu trong DB, nhưng với user khác thì user đó xem như không tồn tại.
