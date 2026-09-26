@@ -1,0 +1,443 @@
+{
+  "v": 3,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-09-25T08:44:33Z"
+  },
+  "title": "ChatApp · UI Prototype",
+  "launch": {
+    "view": "canvas",
+    "page": "overview"
+  },
+  "pages": [
+    {
+      "id": "overview",
+      "name": "00 · Mục lục"
+    },
+    {
+      "id": "ds",
+      "name": "01 · Design system"
+    },
+    {
+      "id": "auth",
+      "name": "1 · Xác thực"
+    },
+    {
+      "id": "chat",
+      "name": "2 · Chat 1-1"
+    },
+    {
+      "id": "group",
+      "name": "3 · Nhóm chat"
+    },
+    {
+      "id": "friends",
+      "name": "4 · Bạn bè"
+    },
+    {
+      "id": "calls",
+      "name": "5 · Cuộc gọi"
+    },
+    {
+      "id": "profile",
+      "name": "6 · Hồ sơ"
+    },
+    {
+      "id": "admin",
+      "name": "7 · Admin"
+    }
+  ],
+  "boards": {
+    "Main.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "Mục lục",
+      "page": "overview",
+      "is_interactive": true
+    },
+    "DesignSystem.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 1920,
+      "title": "Design system",
+      "page": "ds",
+      "is_interactive": true
+    },
+    "A1-Login.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "A1 · Đăng nhập",
+      "page": "auth",
+      "is_interactive": true
+    },
+    "A2-Register.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "A2 · Đăng ký",
+      "page": "auth",
+      "is_interactive": true
+    },
+    "A3-ForgotPassword.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "A3 · Quên mật khẩu",
+      "page": "auth",
+      "is_interactive": true
+    },
+    "A4-ResetPassword.dc.html": {
+      "x": 0,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "A4 · Đặt lại mật khẩu",
+      "page": "auth",
+      "is_interactive": true
+    },
+    "C1-Chat.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "C1 · Chat 1-1 (chính)",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C2-NoConversation.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "C2 · Chưa chọn cuộc trò chuyện",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C3-SearchMessages.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "C3 · Tìm kiếm tin nhắn",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C4-ContactInfo.dc.html": {
+      "x": 0,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "C4 · Thông tin liên hệ",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C5-MessageMenu.dc.html": {
+      "x": 1520,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "C5 · Menu tin nhắn",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C5b-EditMessage.dc.html": {
+      "x": 3040,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "C5b · Chỉnh sửa tin nhắn",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C6-Attachments.dc.html": {
+      "x": 0,
+      "y": 2040,
+      "w": 1440,
+      "h": 900,
+      "title": "C6 · Đính kèm file",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C7-ReportModal.dc.html": {
+      "x": 1520,
+      "y": 2040,
+      "w": 1440,
+      "h": 900,
+      "title": "C7 · Modal báo cáo",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "C8-Notifications.dc.html": {
+      "x": 3040,
+      "y": 2040,
+      "w": 1440,
+      "h": 900,
+      "title": "C8 · Thông báo",
+      "page": "chat",
+      "is_interactive": true
+    },
+    "G1-GroupChat.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "G1 · Chat nhóm + thành viên",
+      "page": "group",
+      "is_interactive": true
+    },
+    "G2-AddMembers.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "G2 · Thêm thành viên",
+      "page": "group",
+      "is_interactive": true
+    },
+    "G3-EditGroup.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "G3 · Đổi thông tin nhóm",
+      "page": "group",
+      "is_interactive": true
+    },
+    "F1-Friends.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "F1 · Tất cả bạn bè",
+      "page": "friends",
+      "is_interactive": true
+    },
+    "F2-FriendRequests.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "F2 · Lời mời kết bạn",
+      "page": "friends",
+      "is_interactive": true
+    },
+    "F3-FindUsers.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "F3 · Tìm người dùng",
+      "page": "friends",
+      "is_interactive": true
+    },
+    "F4-Blocked.dc.html": {
+      "x": 0,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "F4 · Đã chặn",
+      "page": "friends",
+      "is_interactive": true
+    },
+    "P1-CallHistory.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "P1 · Lịch sử cuộc gọi",
+      "page": "calls",
+      "is_interactive": true
+    },
+    "P2-IncomingCall.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "P2 · Cuộc gọi đến",
+      "page": "calls",
+      "is_interactive": true
+    },
+    "P3-VideoCall.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "P3 · Video call",
+      "page": "calls",
+      "is_interactive": true
+    },
+    "S1-Profile.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "S1 · Hồ sơ & cài đặt",
+      "page": "profile",
+      "is_interactive": true
+    },
+    "D1-Dashboard.dc.html": {
+      "x": 0,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "D1 · Dashboard",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D2-Users.dc.html": {
+      "x": 1520,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "D2 · Danh sách người dùng",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D3-UserDetail.dc.html": {
+      "x": 3040,
+      "y": 0,
+      "w": 1440,
+      "h": 900,
+      "title": "D3 · Chi tiết người dùng",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D4-Groups.dc.html": {
+      "x": 0,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "D4 · Danh sách nhóm",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D5-GroupDetail.dc.html": {
+      "x": 1520,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "D5 · Chi tiết nhóm & báo cáo",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D6-DisbandGroup.dc.html": {
+      "x": 3040,
+      "y": 1020,
+      "w": 1440,
+      "h": 900,
+      "title": "D6 · Modal giải tán nhóm",
+      "page": "admin",
+      "is_interactive": true
+    },
+    "D7-Reports.dc.html": {
+      "x": 0,
+      "y": 2040,
+      "w": 1440,
+      "h": 900,
+      "title": "D7 · Danh sách báo cáo",
+      "page": "admin",
+      "is_interactive": true
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "DesignSystem.dc.html",
+    "A1-Login.dc.html",
+    "A2-Register.dc.html",
+    "A3-ForgotPassword.dc.html",
+    "A4-ResetPassword.dc.html",
+    "C1-Chat.dc.html",
+    "C2-NoConversation.dc.html",
+    "C3-SearchMessages.dc.html",
+    "C4-ContactInfo.dc.html",
+    "C5-MessageMenu.dc.html",
+    "C5b-EditMessage.dc.html",
+    "C6-Attachments.dc.html",
+    "C7-ReportModal.dc.html",
+    "C8-Notifications.dc.html",
+    "G1-GroupChat.dc.html",
+    "G2-AddMembers.dc.html",
+    "G3-EditGroup.dc.html",
+    "F1-Friends.dc.html",
+    "F2-FriendRequests.dc.html",
+    "F3-FindUsers.dc.html",
+    "F4-Blocked.dc.html",
+    "P1-CallHistory.dc.html",
+    "P2-IncomingCall.dc.html",
+    "P3-VideoCall.dc.html",
+    "S1-Profile.dc.html",
+    "D1-Dashboard.dc.html",
+    "D2-Users.dc.html",
+    "D3-UserDetail.dc.html",
+    "D4-Groups.dc.html",
+    "D5-GroupDetail.dc.html",
+    "D6-DisbandGroup.dc.html",
+    "D7-Reports.dc.html"
+  ],
+  "notes": {
+    "title-auth": {
+      "x": 0,
+      "y": -300,
+      "text": "Xác thực (Auth) · 4 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "auth"
+    },
+    "title-chat": {
+      "x": 0,
+      "y": -300,
+      "text": "Chat 1-1 · 9 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "chat"
+    },
+    "title-group": {
+      "x": 0,
+      "y": -300,
+      "text": "Nhóm chat · 3 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "group"
+    },
+    "title-friends": {
+      "x": 0,
+      "y": -300,
+      "text": "Bạn bè & kết nối · 4 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "friends"
+    },
+    "title-calls": {
+      "x": 0,
+      "y": -300,
+      "text": "Cuộc gọi · 3 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "calls"
+    },
+    "title-profile": {
+      "x": 0,
+      "y": -300,
+      "text": "Hồ sơ & cài đặt · 1 màn hình",
+      "kind": "title1",
+      "maxW": 1440,
+      "page": "profile"
+    },
+    "title-admin": {
+      "x": 0,
+      "y": -300,
+      "text": "Trang quản trị · 7 màn hình",
+      "kind": "title1",
+      "maxW": 4480,
+      "page": "admin"
+    }
+  },
+  "designSystems": []
+}

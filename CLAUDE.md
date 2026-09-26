@@ -87,9 +87,16 @@ Group call, push notification thật (service worker), reaction, ghim tin nhắn
 | 4 | 8-9 | Call 1-1 + lịch sử, Admin dashboard, giải tán nhóm |
 | 5 | 10-11 | Tích hợp, test E2E, polish, seed data, báo cáo, slide, buffer |
 
+Checklist chi tiết từng việc theo sprint/người: `PLAN.md` (tick `[x]` khi xong; cập nhật file này khi tiến độ thay đổi).
 Doc kế hoạch chi tiết (Claude Docs): https://claude.ai/code/artifact/a8abc8c2-8a07-43b2-a9d3-b8f763317ccd
 
+### UI/UX (cập nhật 2026-09-25)
+- Figma hết quota MCP (Starter) → UI dựng thành **prototype HTML** ở `design/prototype/` (31 màn A1–A4, C1–C8 + C5b, G1–G3, F1–F4, P1–P3, S1, D1–D7 + mục lục + design system; gồm cả 6 màn Figma cũ).
+- Canvas online: https://claude.ai/artifact/M4cCvHz5CXn9S2vsCGk1wM (CSS asset `/_blob/a1f34fe590b998022247038c6de8902e`). Offline: `design/prototype/ChatApp-UI-Prototype.html`. Nguồn sửa ở `design/prototype/src/`, build bằng `node build.mjs`.
+- Theme bằng CSS variables: mono-light (mặc định), mono-dark, indigo-light.
+
 ## 7. Câu hỏi còn mở (cần user chốt)
+- UI hiển thị **tên hiển thị** (vd "Nguyễn Minh Anh") + `@username`, nhưng ERD v2 bảng `users` chưa có cột `display_name` → đề xuất thêm cột này (hoặc chỉ hiển thị username).
 - Backend framework: Express hay NestJS? (đang mặc định Express)
 - Cách chia vai: vertical slice hay tách FE/BE? (nhóm tự chốt qua họp nhóm)
 - Có yêu cầu báo cáo/tài liệu cụ thể của môn không?

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>D7 · Danh sách báo cáo · ChatApp</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/a1f34fe590b998022247038c6de8902e">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="app theme-{{theme}}" style="width: 1440px; height: 900px">
+<nav class="anav" aria-label="Điều hướng quản trị">
+<div class="anav-brand"><span class="logo" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span><span class="col" style="gap: 0"><span class="fw6">ChatApp</span><span class="t-cap c2">Trang quản trị</span></span></div>
+<a class="" href="D1-Dashboard.dc.html"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="9" x="3" y="3" rx="1"></rect><rect width="7" height="5" x="14" y="3" rx="1"></rect><rect width="7" height="9" x="14" y="12" rx="1"></rect><rect width="7" height="5" x="3" y="16" rx="1"></rect></svg>Tổng quan</a>
+<a class="" href="D2-Users.dc.html"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>Người dùng</a>
+<a class="" href="D4-Groups.dc.html"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg>Nhóm chat</a>
+<a class="on" href="D7-Reports.dc.html"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" x2="4" y1="22" y2="15"></line></svg>Báo cáo<span class="count">7</span></a>
+<div class="spacer"></div>
+<div class="row" style="gap: 10px; padding: 12px 8px; border-top: 1px solid var(--border)"><span class="av av32 tn4" aria-hidden="true">AD</span><span class="col grow" style="gap: 0"><span class="t-small fw5">Quản trị viên</span><span class="t-cap c2 trunc">admin@chatapp.local</span></span><a class="ibtn sm" href="A1-Login.dc.html" aria-label="Đăng xuất"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg></a></div>
+</nav><main class="main"><header class="topbar"><div class="row" style="gap: 12px"><div class="col" style="gap: 0"><h1 class="t-h2">Báo cáo</h1><span class="t-small c2">Báo cáo từ người dùng về người dùng khác và nhóm chat</span></div></div><div class="row"></div></header>
+<div class="content" style="gap: 16px">
+<div class="row" style="justify-content: space-between; gap: 16px">
+<div class="tabs" style="border-bottom: 0"><button class="tab on">Đang mở <span class="count">7</span></button><button class="tab">Đã xử lý <span class="t-cap c3">23</span></button><button class="tab">Đã bác bỏ <span class="t-cap c3">9</span></button></div>
+<div class="toolbar"><button class="select"><span class="c3">Đối tượng:</span>Tất cả<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><button class="select"><span class="c3">Lý do:</span>Tất cả<svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div class="input" style="width: 220px"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input id="rep-q" type="text" placeholder="Tìm theo tên" /></div></div>
+</div>
+<div style="display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; align-items: start">
+<div class="card" style="overflow: hidden">
+<table class="table dense"><thead><tr><th>Đối tượng bị báo cáo</th><th>Lý do</th><th>Người báo cáo</th><th>Thời gian</th><th class="num">Tổng BC</th></tr></thead><tbody>
+<tr class="sel"><td><span class="row" style="gap: 10px"><span class="av av32 tn3" aria-hidden="true">AT</span><span class="col" style="gap: 0"><span class="fw5">Lương Anh Tú</span><span class="t-cap c2">Người dùng</span></span></span></td><td class="t-small">Quấy rối, bắt nạt</td><td class="t-small">Lê Thu Hà</td><td class="t-small c2 tnum">10:12</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>4</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn1 sq" aria-hidden="true">MB</span><span class="col" style="gap: 0"><span class="fw5">Hội chợ mua bán</span><span class="t-cap c2">Nhóm</span></span></span></td><td class="t-small">Spam hoặc lừa đảo</td><td class="t-small">Phạm Quốc Bảo</td><td class="t-small c2 tnum">09:30</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>5</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn2" aria-hidden="true">MP</span><span class="col" style="gap: 0"><span class="fw5">Mai Phương</span><span class="t-cap c2">Người dùng</span></span></span></td><td class="t-small">Giả mạo người khác</td><td class="t-small">Võ Ngọc Linh</td><td class="t-small c2 tnum">Hôm qua</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>3</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn3 sq" aria-hidden="true">SV</span><span class="col" style="gap: 0"><span class="fw5">Săn vé concert</span><span class="t-cap c2">Nhóm</span></span></span></td><td class="t-small">Spam hoặc lừa đảo</td><td class="t-small">Trần Hoàng Nam</td><td class="t-small c2 tnum">Hôm qua</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>3</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn3" aria-hidden="true">AT</span><span class="col" style="gap: 0"><span class="fw5">Lương Anh Tú</span><span class="t-cap c2">Người dùng</span></span></span></td><td class="t-small">Spam hoặc lừa đảo</td><td class="t-small">Võ Ngọc Linh</td><td class="t-small c2 tnum">24/09</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>4</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn4 sq" aria-hidden="true">GT</span><span class="col" style="gap: 0"><span class="fw5">CLB Guitar</span><span class="t-cap c2">Nhóm</span></span></span></td><td class="t-small">Lý do khác</td><td class="t-small">Bùi Khánh Vy</td><td class="t-small c2 tnum">22/09</td><td class="num"><span class="tnum">1</span></td></tr>
+<tr class=""><td><span class="row" style="gap: 10px"><span class="av av32 tn3" aria-hidden="true">AT</span><span class="col" style="gap: 0"><span class="fw5">Lương Anh Tú</span><span class="t-cap c2">Người dùng</span></span></span></td><td class="t-small">Nội dung không phù hợp</td><td class="t-small">Trần Hoàng Nam</td><td class="t-small c2 tnum">22/09</td><td class="num"><span class="flagcount"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>4</span></td></tr>
+</tbody></table>
+</div>
+<aside class="card">
+<div class="card-head"><h2 class="t-title">Chi tiết báo cáo</h2><span class="badge warning"><span class="bd"></span>Đang mở</span></div>
+<div class="card-body col" style="gap: 16px">
+<a class="row" href="D3-UserDetail.dc.html" style="gap: 12px"><span class="av av48 tn3" aria-hidden="true">AT</span><span class="col grow" style="gap: 2px"><span class="fw6">Lương Anh Tú</span><span class="t-small c2">Người dùng · @anhtu</span></span><span class="badge danger"><svg class="ic" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>4 báo cáo</span></a>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px"><div class="col" style="gap: 2px"><span class="t-cap c2">Lý do</span><span class="t-small">Quấy rối, bắt nạt</span></div><div class="col" style="gap: 2px"><span class="t-cap c2">Người báo cáo</span><span class="t-small">Lê Thu Hà</span></div><div class="col" style="gap: 2px"><span class="t-cap c2">Thời gian</span><span class="t-small">10:12 · 25/09/2026</span></div><div class="col" style="gap: 2px"><span class="t-cap c2">Xử lý bởi</span><span class="t-small">Chưa xử lý</span></div></div>
+<div class="col" style="gap: 2px"><span class="t-cap c2">Mô tả</span><span class="t-small">Liên tục nhắn tin xúc phạm sau khi mình từ chối lời mời kết bạn.</span></div>
+<div class="alert warning"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg><span>Người dùng này đã có từ 3 báo cáo trở lên. Có thể cân nhắc xóa tài khoản ở trang chi tiết người dùng.</span></div>
+<div class="col" style="gap: 8px">
+<button class="btn btn-primary btn-block"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m4.9 4.9 14.2 14.2"></path></svg>Chấp nhận &amp; cấm người dùng</button>
+<button class="btn btn-secondary btn-block"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Chỉ đánh dấu đã xử lý</button>
+<button class="btn btn-ghost btn-block">Bác bỏ báo cáo</button>
+</div>
+</div>
+</aside>
+</div>
+</div></main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["mono-light","mono-dark","indigo-light"],"default":"mono-light","section":"Theme"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { theme: this.props.theme ?? 'mono-light' };
+  }
+}
+</script>
+</body>
+</html>

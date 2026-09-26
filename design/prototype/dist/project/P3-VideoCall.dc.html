@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>P3 · Video call · ChatApp</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/a1f34fe590b998022247038c6de8902e">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="app theme-{{theme}} stage" style="width: 1440px; height: 900px">
+<main class="col" style="flex: 1 1 0; padding: 20px 24px 24px; gap: 20px; position: relative">
+<header class="row" style="justify-content: space-between">
+<div class="row" style="gap: 12px"><span class="av av40 tn1" aria-hidden="true">MA</span><div class="col" style="gap: 0"><span class="fw6">Nguyễn Minh Anh</span><span class="row clabel" style="gap: 6px; font-size: 13px"><span class="tnum">12:48</span>·<svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>Kết nối tốt</span></div></div>
+<span class="clabel" style="font-size: 13px">Cuộc gọi video</span>
+</header>
+<div class="tile" style="flex: 1 1 0" role="img" aria-label="Video của Nguyễn Minh Anh">
+<div class="col" style="align-items: center; gap: 12px; color: rgba(255, 255, 255, .5)"><svg class="ic" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg><span class="t-small">[Video của người nhận]</span></div>
+<span class="tile-label">Nguyễn Minh Anh</span>
+<div class="tile" style="position: absolute; right: 20px; bottom: 20px; width: 264px; height: 168px; background: #2A2A2F; box-shadow: 0 12px 32px rgba(0, 0, 0, .5)">
+<div class="col" style="align-items: center; gap: 8px"><span class="av av56 tn4" aria-hidden="true">TK</span><span class="t-cap" style="color: rgba(255, 255, 255, .7)">Camera đã tắt</span></div>
+<span class="tile-label" style="left: 10px; bottom: 10px; height: 26px; font-size: 12px"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2"></path><path d="M5 10v2a7 7 0 0 0 12 5"></path><path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"></path><path d="M9 9v3a3 3 0 0 0 5.12 2.12"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>Bạn</span>
+</div>
+<div class="tile-label" style="left: 50%; top: 16px; bottom: auto; transform: translateX(-50%)"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2"></path><path d="M5 10v2a7 7 0 0 0 12 5"></path><path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"></path><path d="M9 9v3a3 3 0 0 0 5.12 2.12"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg>Mic của bạn đang tắt</div>
+</div>
+<footer class="row" style="justify-content: center; gap: 20px">
+<div class="col" style="align-items: center; gap: 8px"><button class="cbtn off" aria-label="Bật mic" aria-pressed="true"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="22" y1="2" y2="22"></line><path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2"></path><path d="M5 10v2a7 7 0 0 0 12 5"></path><path d="M15 9.34V5a3 3 0 0 0-5.68-1.33"></path><path d="M9 9v3a3 3 0 0 0 5.12 2.12"></path><line x1="12" x2="12" y1="19" y2="22"></line></svg></button><span class="clabel">Đã tắt mic</span></div>
+<div class="col" style="align-items: center; gap: 8px"><button class="cbtn off" aria-label="Bật camera" aria-pressed="true"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.66 6H14a2 2 0 0 1 2 2v2.5l5.248-3.062A.5.5 0 0 1 22 7.87v8.196"></path><path d="M16 16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h2"></path><path d="m2 2 20 20"></path></svg></button><span class="clabel">Camera đã tắt</span></div>
+<div class="col" style="align-items: center; gap: 8px"><button class="cbtn" aria-label="Loa"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"></path><path d="M16 9a5 5 0 0 1 0 6"></path><path d="M19.364 18.364a9 9 0 0 0 0-12.728"></path></svg></button><span class="clabel">Loa</span></div>
+<div class="col" style="align-items: center; gap: 8px"><a class="cbtn end" href="P1-CallHistory.dc.html" aria-label="Kết thúc cuộc gọi"><svg class="ic" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.42 19.42 0 0 1-3.33-2.67m-2.67-3.34a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91"></path><line x1="22" x2="2" y1="2" y2="22"></line></svg></a><span class="clabel">Kết thúc</span></div>
+</footer>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["mono-light","mono-dark","indigo-light"],"default":"mono-light","section":"Theme"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { theme: this.props.theme ?? 'mono-light' };
+  }
+}
+</script>
+</body>
+</html>

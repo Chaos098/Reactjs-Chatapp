@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>C2 · Chưa chọn cuộc trò chuyện · ChatApp</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="/_blob/a1f34fe590b998022247038c6de8902e">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="app theme-{{theme}}" style="width: 1440px; height: 900px">
+<nav class="rail" aria-label="Điều hướng chính">
+<span class="logo" aria-hidden="true"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span>
+<div class="rail-nav">
+<a class="navbtn on" href="C1-Chat.dc.html" aria-label="Đoạn chat"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg><span class="count">4</span></a>
+<a class="navbtn" href="F1-Friends.dc.html" aria-label="Bạn bè"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><span class="count">3</span></a>
+<a class="navbtn" href="P1-CallHistory.dc.html" aria-label="Cuộc gọi"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+</div>
+<div class="spacer"></div>
+<a class="navbtn" href="C8-Notifications.dc.html" aria-label="Thông báo"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg><span class="pip"></span></a>
+<a class="navbtn" href="S1-Profile.dc.html" aria-label="Hồ sơ"><span class="av av32 tn4" aria-hidden="true">TK</span></a>
+</nav><section class="pane" style="width: 340px" aria-label="Danh sách đoạn chat">
+<div class="pane-head"><h2 class="t-h2">Đoạn chat</h2><button class="ibtn subtle sm" aria-label="Tin nhắn mới"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path></svg></button></div>
+<div class="pane-pad"><div class="input filled"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input id="conv-search" type="text" placeholder="Tìm kiếm đoạn chat" /></div></div>
+<div class="filters"><button class="chip on">Tất cả</button><button class="chip">Chưa đọc</button><button class="chip">Nhóm</button></div>
+<div class="clist">
+<a class="citem" href="C1-Chat.dc.html"><span class="av av48 tn1" aria-hidden="true">MA<span class="on-dot"></span></span><span class="meta"><span class="top"><span class="name trunc">Nguyễn Minh Anh</span><span class="time">10:24</span></span><span class="bottom"><span class="trunc grow">Bạn: Tối nay mình gửi bản báo cáo nhé</span></span></span></a>
+<a class="citem  unread" href="G1-GroupChat.dc.html"><span class="av av48 tn2 sq" aria-hidden="true">CN</span><span class="meta"><span class="top"><span class="name trunc">Nhóm đồ án CNPM</span><span class="time">10:02</span></span><span class="bottom"><span class="trunc grow">Gia Huy: Mình push code lên nhánh feat/auth rồi</span><span class="count dark">3</span></span></span></a>
+<a class="citem  unread" href="C1-Chat.dc.html"><span class="av av48 tn2" aria-hidden="true">HN</span><span class="meta"><span class="top"><span class="name trunc">Trần Hoàng Nam</span><span class="time">09:41</span></span><span class="bottom"><span class="trunc grow">Tối nay họp nhóm lúc 8h nhé</span><span class="count dark">1</span></span></span></a>
+<a class="citem" href="C1-Chat.dc.html"><span class="av av48 tn3" aria-hidden="true">TH<span class="on-dot"></span></span><span class="meta"><span class="top"><span class="name trunc">Lê Thu Hà</span><span class="time">Hôm qua</span></span><span class="bottom"><span class="trunc grow">Bạn: Cảm ơn nha!</span></span></span></a>
+<a class="citem" href="G1-GroupChat.dc.html"><span class="av av48 tn3 sq" aria-hidden="true">KT</span><span class="meta"><span class="top"><span class="name trunc">Lớp KTPM K22</span><span class="time">Hôm qua</span></span><span class="bottom"><span class="trunc grow">Thầy đã đăng lịch thi giữa kỳ</span></span></span></a>
+<a class="citem" href="C1-Chat.dc.html"><span class="av av48 tn4" aria-hidden="true">QB</span><span class="meta"><span class="top"><span class="name trunc">Phạm Quốc Bảo</span><span class="time">T2</span></span><span class="bottom"><span class="c-danger row" style="gap: 4px"><svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" x2="16" y1="2" y2="8"></line><line x1="16" x2="22" y1="2" y2="8"></line><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><span class="trunc grow c-danger">Cuộc gọi nhỡ</span></span></span></a>
+<a class="citem" href="C1-Chat.dc.html"><span class="av av48 tn2" aria-hidden="true">NL<span class="on-dot"></span></span><span class="meta"><span class="top"><span class="name trunc">Võ Ngọc Linh</span><span class="time">T2</span></span><span class="bottom"><span class="trunc grow">Đã gửi một ảnh</span></span></span></a>
+<a class="citem" href="G1-GroupChat.dc.html"><span class="av av48 tn4 sq" aria-hidden="true">GT</span><span class="meta"><span class="top"><span class="name trunc">CLB Guitar</span><span class="time">20/09</span></span><span class="bottom"><span class="trunc grow">Khánh Vy: Chủ nhật tập ở phòng B2</span></span></span></a>
+</div>
+</section><main class="chat" style="align-items: center; justify-content: center; gap: 16px; background: var(--bg-app); text-align: center">
+<span class="ring" style="width: 72px; height: 72px; background: var(--bg-subtle)"><svg class="ic" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></span>
+<div class="col" style="gap: 6px; align-items: center"><h2 class="t-h2">Chọn một đoạn chat</h2><p class="c2" style="max-width: 360px">Chọn một cuộc trò chuyện trong danh sách bên trái hoặc bắt đầu cuộc trò chuyện mới.</p></div>
+<button class="btn btn-primary"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path></svg>Tin nhắn mới</button>
+</main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"theme":{"editor":"enum","options":["mono-light","mono-dark","indigo-light"],"default":"mono-light","section":"Theme"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { theme: this.props.theme ?? 'mono-light' };
+  }
+}
+</script>
+</body>
+</html>
